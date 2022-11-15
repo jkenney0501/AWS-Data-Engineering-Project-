@@ -7,6 +7,8 @@ It is meant to demonstrate in simple form how the data engineering life cycle is
 
 Below we load data from an S3 bucket to a Redshift database created on a cluster where a STAR schema is used for Business Intelligence. 
 
+[See the Redshift Cluster and ETL process](https://github.com/jkenney0501/AWS-Data-Engineering-Project-/blob/main/create_cluster_to_ETL.ipynb)
+
 ### Process Flow for Sparkify
 <img src="AWS Process Flow.png" />
 
@@ -23,7 +25,9 @@ As a data engineer, we are tasked with building an ETL pipeline that extracts th
 
 ### Testing The Data
 
-After buiding the pipleinf succesfully, we need to run tsome test queries on iur schema to validate its functionality.
+[See the Redshift Cluster and ETL process](https://github.com/jkenney0501/AWS-Data-Engineering-Project-/blob/main/create_cluster_to_ETL.ipynb)
+
+After buiding the pipline succesfully, we need to run tsome test queries on iur schema to validate its functionality.
 
 Some simple queries can include:
 
