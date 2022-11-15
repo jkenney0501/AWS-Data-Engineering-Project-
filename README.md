@@ -6,12 +6,14 @@ This project builds a pipeline from AWS S3 storage to a Redshift Cloud hosted Cl
 It is meant to demonstrate in simple form how the data engineering life cycle is represented in real time and in its simplest form. Typically, the users submit get/put requests from various applications represented in the first three sources below. Then data is stored//staged and ultimately ingested into a transformation phase (STAR schema used here) and finally an analytics service is provided to end users.
 
 Below we load data from an S3 bucket to a Redshift database created on a cluster where a STAR schema is used for Business Intelligence. 
+
 ### Process Flow for Sparkify
-![Process Flow!](/AWS%20Process%20Flow.PNG)
+<img src="AWS Process Flow.png" />
+
 
 Below is a representation of the STAR schema used for this project. 
 ### Redhsift Star Schema used in Spakify Cluster
-![AWS Redshift Star Schema!](/ER.PNG)
+<img src="er.png" />
 
 ## Objective
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
