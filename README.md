@@ -1,4 +1,5 @@
 # Data Engineering with AWS and AWS Redhsift
+A basic ETL process from S3 to Redshift to Business Intelligence using Python and AWS resources.
 
 ## Introduction
 This project builds a pipeline from AWS S3 storage to a Redshift Cloud hosted Cluster where an ETL process extracts the staged data and creates a STAR Schema to allow business users to query the data easier for business intelligence. 
