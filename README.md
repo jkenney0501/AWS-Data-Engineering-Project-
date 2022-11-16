@@ -54,7 +54,7 @@ To more complex queries:
         LIMIT 10;
    """ ` 
 
-<img src="sql_complex.png" />
+<img src="sql_complex.PNG" />
 
 
 After running the above queries, we can see the STAR schema is successful! 
