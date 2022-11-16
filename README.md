@@ -12,11 +12,14 @@ Below we load data from an S3 bucket to a Redshift database created on a cluster
 ### Process Flow for Sparkify
 <img src="AWS Process Flow.png" />
 
+The process flow demonstrates the data flowing from various sources to the AWS S3 bucket where it is staged. After staging in S3, python is utilized to extract the data into a STAR schema where it is hosted on a Redshfit cluster and can be queried by business users.
 
-Below is a representation of the STAR schema used for this project. 
+ 
 
-### Redhsift Star Schema used in Spakify Cluster
+### Redshift Star Schema used in Spakify Cluster
 <img src="ER.png" />
+
+Below is a representation of the STAR schema used for this project after the ETL process is finished and queries for business intellignece can begin producing valyable insights.
 
 ## Objective
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
@@ -50,5 +53,10 @@ To more complex queries:
         WHERE f.level != 'free'
         LIMIT 10;
    """ ` 
-   
+
+<img src="sql_complex.png" />
+
+
 After running the above queries, we can see the STAR schema is successful! 
+
+Dont forget to delete the cluster and all resources!
