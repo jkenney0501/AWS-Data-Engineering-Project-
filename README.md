@@ -8,6 +8,11 @@ It is meant to demonstrate in simple form how the data engineering life cycle is
 
 Below we load data from an S3 bucket to a Redshift database created on a cluster where a STAR schema is used for Business Intelligence. 
 
+## Objective
+A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
+
+As a data engineer, we are tasked with building an ETL pipeline that extracts their data from S3, stages them in Redshift, and transforms data into a set of dimensional tables for their analytics team to continue finding insights into what songs their users are listening to. We'll be able to test the database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare your results with their expected results.
+
 [See the Redshift Cluster and ETL process](https://github.com/jkenney0501/AWS-Data-Engineering-Project-/blob/main/create_cluster_to_ETL.ipynb)
 
 ### Process Flow for Sparkify
@@ -22,10 +27,7 @@ The process flow demonstrates the data flowing from various sources to the AWS S
 
 Below is a representation of the STAR schema used for this project after the ETL process is finished and queries for business intellignece can begin producing valyable insights.
 
-## Objective
-A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
-As a data engineer, we are tasked with building an ETL pipeline that extracts their data from S3, stages them in Redshift, and transforms data into a set of dimensional tables for their analytics team to continue finding insights into what songs their users are listening to. We'll be able to test the database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare your results with their expected results.
 
 ### Testing The Data
 
